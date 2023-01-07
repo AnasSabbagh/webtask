@@ -1,0 +1,94 @@
+<!-- 
+
+Anas Safi Sabbagh
+Group : 2
+ID : 443003535
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Greeting webpage</title>
+</head>
+<body>
+    <img src="C:\╪┤╪╣╪º╪▒-╪º┘ä╪¼╪º┘à╪╣╪⌐-┘à┘ä┘ê┘å-┘í-.png" >
+
+<h1><strong>Welcome To Greeting Webpage</strong></h1>
+    <p>Please Enter Your Name:</p>
+   
+
+    <input id="userInput" type = "text" placeholder="First Name"> <br> 
+    <input id="userInput2" type = "text" placeholder="Last Name" > <br> 
+
+    <button onclick="submitb()"><strong>submit</strong></button>
+    <button onclick="resetb()"><strong>reset</strong></button> 
+
+    <p id="theMessage"> </p>
+
+    <style>
+        h1 {
+            color: aliceblue;
+            font-style: italic;
+        }
+
+        a {
+            color: aliceblue;
+            font-style: italic;
+            text-align: left;
+            font-size: small;
+
+        }
+
+        body {
+            background-color: #2B4865;
+            text-align: center;
+            color: burlywood;
+            font-size: xx-large; 
+            font-style: italic; 
+        }
+
+        button {
+            background-color: burlywood;
+            color: white;
+            padding: 0 0.5%;
+            font-style: italic;
+            font-size: small;
+            border-color: rgb(227, 207, 181);
+            border-radius: 5px;
+
+        }
+
+        p {
+            color: burlywood;
+            font-style: italic;
+            font-size: xx-large
+        }
+
+        img {
+            width: 190px;
+        }
+        
+    </style>
+
+    <script>
+
+        function submitb() {
+            let userInput = document.querySelector("#userInput");
+            let theMessage = document.querySelector("#theMessage");
+            let userInput2 = document.querySelector("#userInput2");
+            theMessage.innerHTML = "Hello, " +userInput.value +" "+ userInput2.value;
+        }
+
+        function resetb() {
+            let reset1 = document.getElementById("userInput").value = "";
+            let reset2 = document.getElementById("userInput2").value = "";
+        }
+        
+
+    </script>
+</body>
+</html>
